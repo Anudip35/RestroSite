@@ -1,0 +1,145 @@
+.app__auth-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-base);
+    background: url(./restaurantimg.jpg);
+    background-size: cover;
+    font-size: 23px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.app__auth {
+    width: 500px;
+    height: 575px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid var(--color-golden);
+    background: var(--color-black);
+    color: var(--color-golden);
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 4;
+  }
+
+  .app__auth-data{
+    margin-bottom: 15px;
+  } 
+
+  .app__auth label{
+    display: flex;
+    padding: 15px;
+  }
+
+.app__auth button{
+    background-color: var(--color-black);
+    border: 2px solid var(--color-golden);
+    font-size: 20px;
+    cursor: pointer;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    padding: 0.4rem 1rem;
+    border-radius: 1px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    margin: auto;
+    display: flex;
+    outline: none;
+    margin-top: 15px;
+    align-items: center;
+    transition: 0.1s ease;
+}
+
+.app__auth button:hover{
+    background-color: var(--color-golden);
+    color: var(--color-black);
+}
+
+.app__auth-input{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+.app__auth-input label{
+    margin-left: 0;
+}
+
+.app__auth-input input{
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    width: 250px;
+    border: 2px solid var(--color-golden);
+    border-radius: 4px;
+}
+
+.app__auth-input input:focus{
+    background-color: var(--color-crimson);
+    border: 3px solid var(--color-golden);
+}
+
+.app__auth-header{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.gimage{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:650px){
+    .app__auth{
+        width: 300px;
+        height: 450px;
+        padding: 15px;
+    }
+
+    .app__auth label{
+        padding: 10px;
+      }
+
+    .app__auth-data{
+        margin-bottom: 10px;
+    }
+
+    .app__auth button{
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 7px;
+        padding: 5px;
+    }
+
+    .app__auth-header{
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 0.02rem;
+    }
+
+    .app__auth-input input{
+        width: 150px;
+    }
+
+    .app__auth-bg{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,103 @@
+.app__newsletter{
+    padding: 2rem 4rem;
+    border: 1px solid var(--color-golden);
+    background: var(--color-black);
+}
+
+.app__newsletter-heading{
+    text-align: center;
+}
+
+.app__newsletter-input{
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.app__newsletter-input input{
+    width: 620px;
+    border: 1px solid var(--color-golden);
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: var(--font-base);
+    color:var(--color-white);
+    margin-right: 2rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-black);
+}
+
+.app__newsletter-input button{
+    width: max-content;
+}
+
+.app__subscription{
+    align-items: center;
+}
+
+.app__subscription h3{
+    color: var(--color-golden);
+    text-align: center;
+}
+
+.message{
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+@media screen and  (min-width:2000px){
+    .app__newsletter-input input{
+        font-size: 2rem;
+    }
+}
+
+@media screen and  (max-width:850px){
+    .app__newsletter-input{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .app__newsletter-input{
+        margin: 0 0 2rem 0;
+        width: 100%;
+    }
+
+    .app__newsletter{
+        height: 350px;
+    }
+
+    .app__newsletter-heading h1{
+        font-size: 38px;
+        line-height: 50px;
+        letter-spacing:0.02rem;
+    }
+}
+
+@media screen and  (max-width:650px){
+    .app__newsletter{
+        padding: 0;
+        border: none;
+        margin: 0.75rem 0.5rem;
+    }
+
+    .app__newsletter-input input{
+        width: 315px;
+        margin-right: 0;
+    }  
+
+    .app__newsletter-input button{
+        margin-top: 15px;
+    }
+
+    .app__newsletter-heading{
+        margin-top: -30px;
+    }
+
+    .app__subscription h3{
+        font-size: 20px;
+    }
+
+    .message{
+        margin-bottom: 10px;
+    }
+}
