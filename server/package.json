@@ -1,11 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.14.2"
+    },
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
